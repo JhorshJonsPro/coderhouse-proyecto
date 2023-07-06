@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+*{
+      padding: 0;
+      margin: 0;
+      font-family: poppins, sans-serif;
+} 
+
+a:link, a:visited, a:active{
+      text-decoration: none;
+}
+
+.flex-xcenter-ycenter{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.flex-xcenter{
+      display: flex;
+      justify-content: center;
+}
+.flex-ycenter{
+      display: flex;
+      align-items: center;
+}
+
+.flex-evenly{
+      display: flex;
+      justify-content: space-evenly;
+}
+
+.flex-colum{
+      display: flex;
+      flex-direction: column;
+}
+
 .nav-gral{
       height: 60px;
       padding: 0 20px 0 10px;
@@ -54,7 +90,7 @@
       font-size: 17px;
 }
 
-.main{
+.main-margin-top{
       margin: 130px 0;
 }
 
@@ -133,14 +169,9 @@
       border: 1px solid #bbbb;
 }
 
-.blog-content{
-      margin: 0 30px 50px;
-}
-
 .blog-item{
       width: 350px;
-      height: 650px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
 }
 
 .blog-item img{
@@ -163,13 +194,11 @@
       margin: 20px 0 100px;
 }
 
-.tratamientos-grupo{
-      margin: 50px auto;
-}
 .tratamiento-item{
       width: 500px;
       height: 150px;
       display: flex;
+      margin-bottom: 80px;
 }
 
 .tratamiento-item img{
@@ -225,3 +254,15 @@
 }
 
 
+@media (max-width: 1000px) {
+      .flex-evenly {
+            flex-direction: column;
+            align-items: center;
+      }
+}
+
+@media (max-width: 1200px) {
+      .footer .footer-img{
+            display: none;
+      }
+}

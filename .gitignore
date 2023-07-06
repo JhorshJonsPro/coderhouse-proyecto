@@ -2,4 +2,4 @@
 *.map
 *.log
 node_module/
-fuentes/
+fuentes/ 
