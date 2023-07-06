@@ -42,14 +42,31 @@ a:link, a:visited, a:active{
       justify-content: space-between;
 }
 
+.nav-color{
+      background-color: #dadada;
+}
+
+.nav-item-color{
+      color: #000000;
+      margin-right: 30px;
+}
+
+.txt-center{
+      text-align: center;
+      font-family: poppins;
+}
+
 .logo{
-      width: 90px;
+      width: 70px;
+      height: 70px;
 }
 
 .logo img{
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
+      border: 1px solid #000;
+      border-radius: 50%;
 }
 
 .nav-gral ul{
@@ -269,4 +286,8 @@ a:link, a:visited, a:active{
 
 .margin-0{
       margin: 0;
+}
+
+.nav-bs{
+      background-color: #9999;
 }
