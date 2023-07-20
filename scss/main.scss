@@ -241,10 +241,6 @@ a:link, a:visited, a:active{
 }
 
 
-
-
-
-
 // Media Querys
 @media (max-width: 1000px) {
     .flex-evenly {
@@ -269,7 +265,7 @@ a:link, a:visited, a:active{
 }
 
 .nav-bs{
-    background-color: $bordeGrisOscuro
+    background-color: $bordeGrisOscuro;
 }
 
 
