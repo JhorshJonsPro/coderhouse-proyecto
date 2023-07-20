@@ -36,6 +36,23 @@ a:link, a:visited, a:active{
       flex-direction: column;
 }
 
+.nav-gral{
+    height: 60px;
+    padding: 0 20px 0 10px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-color{
+    background-color: #dadada;
+}
+
+.nav-item-color{
+    color: #000000;
+    margin-right: 30px;
+}
+
 
 // Nav con bootstrap
 .nav-color{
@@ -111,11 +128,16 @@ a:link, a:visited, a:active{
     margin: 130px 0;
 }
 
-.main section img{
-    width: 35em;
-    height: 20em;
-    object-fit: cover;
+.main {
+    section {
+        img{
+            width: 35em;
+            height: 20em;
+            object-fit: cover;
+        }
+    }
 }
+
 
 .p-grupo-1{
     width: 35em;

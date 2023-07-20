@@ -35,6 +35,23 @@ a:link, a:visited, a:active {
   flex-direction: column;
 }
 
+.nav-gral {
+  height: 60px;
+  padding: 0 20px 0 10px;
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-color {
+  background-color: #dadada;
+}
+
+.nav-item-color {
+  color: #000000;
+  margin-right: 30px;
+}
+
 .nav-color {
   background-color: #dadada;
 }
