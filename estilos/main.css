@@ -122,14 +122,13 @@ a:link, a:visited, a:active {
 }
 
 .main section img {
-  width: 35em;
-  height: 20em;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .p-grupo-1 {
-  width: 35em;
+  width: 80%;
   position: relative;
 }
 .p-grupo-1 h1 {
@@ -151,12 +150,16 @@ a:link, a:visited, a:active {
 
 .footer {
   background-color: rgba(153, 153, 153, 0.6);
-  padding: 40px 90px;
+  padding: 40px 50px;
 }
 .footer .footer-img {
   width: 600px;
   height: 300px;
   margin: 0 20px;
+}
+.footer .footer-txt {
+  padding: 25px;
+  width: 20%;
 }
 .footer .footer-txt h3 {
   margin-bottom: 30px;
@@ -207,13 +210,15 @@ a:link, a:visited, a:active {
   margin: 70px auto;
 }
 .contacto section img {
-  width: 35em;
-  height: 20em;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .contacto section .p-grupo-1 {
-  width: 35em;
+  width: 80%;
+}
+.contacto section .p-grupo-1 div .p-grupo-2 {
+  padding: 10px;
 }
 .contacto section .formu {
   padding-top: 30px;
@@ -230,34 +235,61 @@ a:link, a:visited, a:active {
 }
 
 .contacto section .formu div input, .contacto section .formu div textarea {
+  width: 100%;
   padding: 5px;
   border: 1px solid rgba(153, 153, 153, 0.6);
   border-radius: 3px;
 }
 
-.contacto section .formu div input[type=mail] {
+.contacto section .formu div input {
   width: 100%;
+}
+.contacto section .formu div input:first-child {
+  margin-bottom: 10px;
 }
 
 @media (max-width: 560px) {
+  .main-margin-top {
+    margin-top: 20px;
+  }
   main.main, main.flex-evenly, main.contacto, div.tratamiento {
+    box-sizing: border-box;
     width: 100%;
-    padding: 0 15%;
+    padding: 0 2%;
   }
   .flex-evenly {
     flex-direction: column;
     align-items: center;
+  }
+  main.contacto section.contacto-item div div.flex-xcenter {
+    flex-wrap: wrap;
+  }
+  .contacto section .p-grupo-1 div .p-grupo-2 {
+    padding: 0px;
   }
 }
 @media (max-width: 1000px) {
+  .main-margin-top {
+    margin-top: 20px;
+  }
   .flex-evenly {
     flex-direction: column;
     align-items: center;
+  }
+  .contacto section .p-grupo-1 div .p-grupo-2 {
+    padding: 0px;
+  }
+  .footer .footer-txt {
+    padding: 25px;
+    width: 80%;
   }
 }
 @media (max-width: 1200px) {
   .footer .footer-img {
     display: none;
+  }
+  .contacto section .p-grupo-1 div .p-grupo-2 {
+    padding: 0px;
   }
 }
 .margin-botom-40 {

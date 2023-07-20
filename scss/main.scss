@@ -131,8 +131,7 @@ a:link, a:visited, a:active{
 .main {
     section {
         img{
-            width: 35em;
-            height: 20em;
+            width: 100%;
             object-fit: cover;
         }
     }
@@ -140,7 +139,7 @@ a:link, a:visited, a:active{
 
 
 .p-grupo-1{
-    width: 35em;
+    width: 80%;
     position: relative;
     h1{
         margin: $marPadMedio;
@@ -164,13 +163,15 @@ a:link, a:visited, a:active{
 //Footer
 .footer{
     background-color: $bordeGrisOscuro;
-    padding: 40px 90px;
+    padding: 40px 50px;
     .footer-img{
         width: 600px;
         height: 300px;
         margin: 0 $marPadBajo;
     }
     .footer-txt{
+        padding: 25px;
+        width: 20%;
         h3{ 
             margin-bottom: $marPadMedio;
         } 
@@ -226,12 +227,16 @@ a:link, a:visited, a:active{
     margin: 70px auto;
     section{
         img{
-            width: 35em;
-            height: 20em;
+            width: 100%;
             object-fit: cover;
         }
         .p-grupo-1{
-            width: 35em;
+            width: 80%;
+            div{
+                .p-grupo-2{
+                    padding: 10px;
+                }
+            }
         }
         .formu{
             padding-top: 30px;
@@ -250,34 +255,90 @@ a:link, a:visited, a:active{
 }
 
 .contacto section .formu div input, .contacto section .formu div textarea{
+    width: 100%;
     padding: 5px;
     border: 1px solid $bordeGrisOscuro;
     border-radius: 3px;    
 }
 
-.contacto section .formu div input[type="mail"]{
-    width: 100%;      
+.contacto section .formu div input{
+    width: 100%;    
+    &:first-child{
+        margin-bottom: 10px;
+    }  
 }
 
 
 // Media Querys
 @media (max-width: 560px) {
 
+    .main-margin-top{
+        margin-top: 20px;
+    }
+
     main.main, main.flex-evenly, main.contacto, div.tratamiento{
+        box-sizing: border-box;
         width: 100%;
-        padding: 0 15%;
+        padding: 0 2%;
     }
 
     .flex-evenly {
           flex-direction: column;
           align-items: center;
     }
+
+    main.contacto{
+        section.contacto-item{
+            div{
+                div.flex-xcenter{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+
+    .contacto{ 
+        section{ 
+            .p-grupo-1{ 
+                div{
+                    .p-grupo-2{
+                        padding: 0px;
+                    }
+                }
+            }
+        }    
+    }   
+
 }
 
 @media (max-width: 1000px) {
+
+    .main-margin-top{
+        margin-top: 20px;
+    }
+
     .flex-evenly {
           flex-direction: column;
           align-items: center;
+    }
+
+    .contacto{ 
+        section{ 
+            .p-grupo-1{ 
+                div{
+                    .p-grupo-2{
+                        padding: 0px;
+                    }
+                }
+            }
+        }    
+    } 
+    
+    .footer{
+        .footer-txt{
+            padding: 25px;
+            width: 80%;
+        } 
     }
 }
 
@@ -285,6 +346,18 @@ a:link, a:visited, a:active{
     .footer .footer-img{
           display: none;
     }
+
+    .contacto{ 
+        section{ 
+            .p-grupo-1{ 
+                div{
+                    .p-grupo-2{
+                        padding: 0px;
+                    }
+                }
+            }
+        }    
+    }   
 }
  
 // Generales
