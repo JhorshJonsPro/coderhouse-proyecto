@@ -163,17 +163,12 @@ a:link, a:visited, a:active{
 
 //Footer
 .footer{
-    background-color: #9999;
+    background-color: $bordeGrisOscuro;
     padding: 40px 90px;
     .footer-img{
         width: 600px;
         height: 300px;
         margin: 0 $marPadBajo;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
     }
     .footer-txt{
         h3{ 
@@ -266,6 +261,19 @@ a:link, a:visited, a:active{
 
 
 // Media Querys
+@media (max-width: 560px) {
+
+    main.main, main.flex-evenly, main.contacto, div.tratamiento{
+        width: 80%;
+        margin: auto;
+    }
+
+    .flex-evenly {
+          flex-direction: column;
+          align-items: center;
+    }
+}
+
 @media (max-width: 1000px) {
     .flex-evenly {
           flex-direction: column;
