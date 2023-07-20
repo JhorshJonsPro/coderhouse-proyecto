@@ -264,8 +264,8 @@ a:link, a:visited, a:active{
 @media (max-width: 560px) {
 
     main.main, main.flex-evenly, main.contacto, div.tratamiento{
-        width: 80%;
-        margin: auto;
+        width: 100%;
+        padding: 0 15%;
     }
 
     .flex-evenly {
