@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+@import "_vars";
+
+
+*{
+      padding: 0;
+      margin: 0;
+      font-family: $FuentePrincipal, sans-serif;
+} 
+
+a:link, a:visited, a:active{
+      text-decoration: none;
+}
+
+.flex-xcenter-ycenter{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.flex-xcenter{
+      display: flex;
+      justify-content: center;
+}
+.flex-ycenter{
+      display: flex;
+      align-items: center;
+}
+
+.flex-evenly{
+      display: flex;
+      justify-content: space-evenly;
+}
+
+.flex-colum{
+      display: flex;
+      flex-direction: column;
+}
+
+.nav-gral{
+    height: 60px;
+    padding: 0 20px 0 10px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-color{
+    background-color: #dadada;
+}
+
+.nav-item-color{
+    color: #000000;
+    margin-right: 30px;
+}
+
+
+// Nav con bootstrap
+.nav-color{
+    background-color: #dadada;
+}
+
+.nav-item-color{
+    color: $blackUno;
+    margin-right: $marPadMedio;
+}
+
+.txt-center{
+    text-align: center;
+    font-family: $FuentePrincipal;
+}
+
+
+//logo
+.logo{
+    width: 70px;
+    height: 70px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 1px solid $blackUno;
+        border-radius: 50%;
+    }
+}
+
+.slider{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+} 
+
+
+//botones
+.btn-cita{
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 60px);
+    z-index: 100;
+    font-size: $fuenteMedio;
+}
+
+.btn-cita-2{
+    width: 70px;
+    height: 25px;
+    border-radius: 5px; 
+    font-size: $fuenteMedio; 
+    margin-top: $marPadBajo;
+}
+
+.btn-redir{
+    padding: $marPadMuyBajo;
+    border-radius: 6px;
+    font-size: $fuenteMedio;
+    border: 1px solid $bordeGris;
+}
+
+
+//Main index
+.main-margin-top{
+    margin: 130px 0;
+}
+
+.main {
+    section {
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+.p-grupo-1{
+    width: 80%;
+    position: relative;
+    h1{
+        margin: $marPadMedio;
+        text-align: center;
+    }
+    h2{
+        margin: $marPadMedio;
+        text-align: center;
+    }
+    p{
+        margin: $marPadBajo auto;
+        text-align: center;
+    }
+}
+
+.p-sin-titulo{
+    margin: $marPadMedio 0;
+}
+
+
+//Footer
+.footer{
+    background-color: $bordeGrisOscuro;
+    padding: 40px 50px;
+    .footer-img{
+        width: 600px;
+        height: 300px;
+        margin: 0 $marPadBajo;
+    }
+    .footer-txt{
+        padding: 25px;
+        width: 20%;
+        h3{ 
+            margin-bottom: $marPadMedio;
+        } 
+    } 
+}
+
+
+//Blog
+.blog-item{
+    width: 350px;
+    margin-bottom: $marPadMedio;
+    img{
+        width: 350px;
+        height: 180px;
+        object-fit: cover;
+    }
+}
+
+.barra-paginacion{
+    margin-bottom: $marPadMedio;
+    a{
+        margin: 0 3px;
+        padding: 3px;
+        color: #333;
+    }
+}
+
+
+// Tratamiento
+.tratamiento{
+    margin: $marPadMedio 0 100px;
+}
+
+.tratamiento-item{
+    width: 500px;
+    height: 150px;
+    display: flex;
+    margin-bottom: 80px;
+    img{
+        height: 100%;
+        width: 50%;
+        object-fit: cover;
+    }
+    .item-txt{
+        padding: $marPadBajo;
+        text-align: center; 
+    }
+}
+
+
+//Contacto
+.contacto{
+    margin: 70px auto;
+    section{
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        .p-grupo-1{
+            width: 80%;
+            div{
+                .p-grupo-2{
+                    padding: 10px;
+                }
+            }
+        }
+        .formu{
+            padding-top: 30px;
+            h2{
+                margin-bottom: $MarPadAlto;
+            }
+            div{
+                margin: $marPadMuyBajo 0;
+            }
+        }
+    }
+}
+
+.contacto-item{
+    margin-bottom: $marPadMedio;
+}
+
+.contacto section .formu div input, .contacto section .formu div textarea{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid $bordeGrisOscuro;
+    border-radius: 3px;    
+}
+
+.contacto section .formu div input{
+    width: 100%;    
+    &:first-child{
+        margin-bottom: 10px;
+    }  
+}
+
+
+// Media Querys
+@media (max-width: 560px) {
+
+    .main-margin-top{
+        margin-top: 20px;
+    }
+
+    main.main, main.flex-evenly, main.contacto, div.tratamiento{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .flex-evenly {
+          flex-direction: column;
+          align-items: center;
+    }
+
+    main.contacto{
+        section.contacto-item{
+            div{
+                div.flex-xcenter{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+
+    .contacto{ 
+        section{ 
+            .p-grupo-1{ 
+                div{
+                    .p-grupo-2{
+                        padding: 0px;
+                    }
+                }
+            }
+        }    
+    }   
+
+}
+
+@media (max-width: 1000px) {
+
+    .main-margin-top{
+        margin-top: 20px;
+    }
+
+    .flex-evenly {
+          flex-direction: column;
+          align-items: center;
+    }
+
+    .contacto{ 
+        section{ 
+            .p-grupo-1{ 
+                div{
+                    .p-grupo-2{
+                        padding: 0px;
+                    }
+                }
+            }
+        }    
+    } 
+    
+    .footer{
+        .footer-txt{
+            padding: 25px;
+            width: 80%;
+        } 
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer .footer-img{
+          display: none;
+    }
+
+    .contacto{ 
+        section{ 
+            .p-grupo-1{ 
+                div{
+                    .p-grupo-2{
+                        padding: 0px;
+                    }
+                }
+            }
+        }    
+    }   
+}
+ 
+// Generales
+.margin-botom-40{
+    margin-bottom: 40px;
+}
+
+.margin-0{
+    margin: 0;
+}
+
+.nav-bs{
+    background-color: $bordeGrisOscuro;
+}
+
+
+
+
+
+ 
+
+
